@@ -4,7 +4,7 @@ class Calculator:
     def subtract(self, x, y):
         pass
     def multiply(self, x, y):
-        pass
+        return x*y
     def divide(self, x, y):
         pass
 
