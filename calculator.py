@@ -4,12 +4,19 @@ class Calculator:
     def subtract(self, x, y):
         pass
     def multiply(self, x, y):
+        return x*y
+    def subtract(self, x, y):
+        return x-y
+    def multiply(self, x, y):
         pass
     def divide(self, x, y):
-        pass
-    def mod(self, x, y):
-        return x % y
-
+        if y == 0:
+            return "0으로 나눌 수 없습니다."
+        else:
+            return x / y
+    def modulo(self, x, y):
+        if y == 0: return "ZeroDivisionError"
+        else: return x % y
 def main():
     calculator = Calculator()
 
@@ -25,5 +32,6 @@ def main():
             continue
 
 
-if name == "main":
+            
+if __name__ == "__main__":
     main()
