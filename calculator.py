@@ -7,6 +7,7 @@ class Calculator:
         pass
     def divide(self, x, y):
         pass
+    def divide(self, x, y):
 
 
 
