@@ -7,15 +7,15 @@ class Calculator:
         pass
     def divide(self, x, y):
         pass
-    def divide(self, x, y):
-
+    def involution(self, x, y):
+        return x**y
 
 
 def main():
     calculator = Calculator()
 
     while True:
-        expression = input("더하기, 빼기, 나누기, 곱하기 연산만 가능합니다. 입력예시(1+1)\n q를 누르면 종료됩니다.")
+        expression = input("더하기, 빼기, 나누기, 나머지 값, 곱하기, 거듭제곱 연산만 가능합니다. 입력예시(1+1)\n q를 누르면 종료됩니다.")
 
         try:
             num1, symbol, num2 = expression[0], expression[1], expression[2]
