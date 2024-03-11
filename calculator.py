@@ -1,6 +1,10 @@
 class Calculator:
     def add(self, x, y):
-        return x + y
+        pass
+    def subtract(self, x, y):
+        pass
+    def multiply(self, x, y):
+        return x*y
     def subtract(self, x, y):
         return x-y
     def multiply(self, x, y):
@@ -28,5 +32,7 @@ def main():
             continue
 
 
+
 if __name__ == "__main__":
     main()
+
