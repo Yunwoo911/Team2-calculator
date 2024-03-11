@@ -14,9 +14,9 @@ class Calculator:
             return "0으로 나눌 수 없습니다."
         else:
             return x / y
-
-
-
+    def modulo(self, x, y):
+        if y == 0: return "ZeroDivisionError"
+        else: return x % y
 def main():
     calculator = Calculator()
 
@@ -32,7 +32,6 @@ def main():
             continue
 
 
-
+            
 if __name__ == "__main__":
     main()
-
