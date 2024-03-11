@@ -7,8 +7,8 @@ class Calculator:
         pass
     def divide(self, x, y):
         pass
-
-
+    def mod(self, x, y):
+        return x % y
 
 def main():
     calculator = Calculator()
