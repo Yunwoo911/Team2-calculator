@@ -1,19 +1,29 @@
-# 사용자로부터 입력 받기
-num1 = int(input("첫 번째 숫자를 입력하세요: "))
-operator = input("연산자를 입력하세요(+, -, *, /): ")
-num2 = int(input("두 번째 숫자를 입력하세요: "))
+class Calculator:
+    def add(self, x, y):
+        pass
+    def subtract(self, x, y):
+        pass
+    def multiply(self, x, y):
+        pass
+    def divide(self, x, y):
+        pass
 
-# 연산자에 따른 계산 수행 및 결과 출력
-if operator == '+':
-    print(f"{num1} + {num2} = {num1 + num2}")
-elif operator == '-':
-    print(f"{num1} - {num2} = {num1 - num2}")
-elif operator == '*':
-    print(f"{num1} * {num2} = {num1 * num2}")
-elif operator == '/':
-    if num2 != 0:
-        print(f"{num1} / {num2} = {num1 / num2}")
-    else:
-        print("0으로 나눌 수 없습니다.")
-else:
-    print("잘못된 연산자입니다. 프로그램을 다시 실행해주세요.")
+
+
+def main():
+    calculator = Calculator()
+
+    while True:
+        expression = input("더하기, 빼기, 나누기, 곱하기 연산만 가능합니다. 입력예시(1+1)\n q를 누르면 종료됩니다.")
+
+        try:
+            num1, symbol, num2 = expression[0], expression[1], expression[2]
+            num1 = float(num1)
+            num2 = float(num2)
+        except ValueError:
+            print("Invalid input. Please enter the expression in correct format.")
+            continue
+
+
+if __name__ == "main":
+    main()
