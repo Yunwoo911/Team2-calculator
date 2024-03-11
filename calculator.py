@@ -2,7 +2,7 @@ class Calculator:
     def add(self, x, y):
         pass
     def subtract(self, x, y):
-        pass
+        return x-y
     def multiply(self, x, y):
         pass
     def divide(self, x, y):
@@ -25,5 +25,5 @@ def main():
             continue
 
 
-if name == "main":
+if __name__ == "__main__":
     main()
