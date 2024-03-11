@@ -5,6 +5,10 @@ class Calculator:
         pass
     def multiply(self, x, y):
         return x*y
+    def subtract(self, x, y):
+        pass
+    def multiply(self, x, y):
+        pass
     def divide(self, x, y):
         pass
 
@@ -25,5 +29,7 @@ def main():
             continue
 
 
-if __name__ == "main":
+
+if __name__ == "__main__":
     main()
+
