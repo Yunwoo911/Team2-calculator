@@ -6,7 +6,10 @@ class Calculator:
     def multiply(self, x, y):
         pass
     def divide(self, x, y):
-        pass
+        if y == 0:
+            return "0으로 나눌 수 없습니다."
+        else:
+            return x / y
 
 
 
